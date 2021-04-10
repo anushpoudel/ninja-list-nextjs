@@ -1,10 +1,10 @@
-import Link from "next/link";
+import React from "react";
 import styles from "../styles/Home.module.css";
 
-export default function Home() {
+const About = () => {
   return (
     <div>
-      <h1 className={styles.title}>Homepage</h1>
+      <h1 className={styles.title}>About</h1>
       <p className={styles.text}>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus in,
         laboriosam excepturi hic sequi doloremque nihil perferendis quo
@@ -17,9 +17,8 @@ export default function Home() {
         accusantium velit exercitationem dignissimos. Natus neque, cumque
         maiores cupiditate sed recusandae voluptatibus?
       </p>
-      <Link href="/ninjas">
-        <a className={styles.btn}>See Ninja Listing</a>
-      </Link>
     </div>
   );
-}
+};
+
+export default About;
